@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+body {
+    background: rgb(77, 75, 75);
+}
+
+
+/* la altura del main es la de la pantalla */
+
+main {
+    min-height: 100vh;
+}
+
+.tituloHora {
+    font-family: 'Krona One', sans-serif;
+    color: white;
+    font-size: 6em;
+}
+
+.tituloCronometro {
+    font-family: 'Krona One', sans-serif;
+    color: white;
+    font-size: 3em;
+}
+
+
+/* Se hace una sombra al texto y se agregan capas de text.shadow que se aumenta el disfuminado (blur, 3er valor) para que haga efecto neon */
+
+.neon-yellow {
+    text-shadow: 0 0 5px #d5fa06, 0 0 10px #d5fa06, 0 0 15px #d5fa06, 0 0 20px #d5fa06, 0 0 40px #d5fa06, 0 0 80px #d5fa06, 0 0 100px #d5fa06;
+}
+
+
+/* botones */
+
+.boton {
+    border-radius: 5%;
+    width: 120px;
+    height: 80px;
+    background: #d5fa06;
+    color: black;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.boton-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.boton-enabled {
+    opacity: 1;
+    cursor: allowed;
+}
